@@ -1,1 +1,3 @@
-
+This is the fifth version where we have improved the PCB layout. In the previous version, the PCB became very large. 
+In this version, we have reduced it by half. It is, however, still quite large, so we are thinking of making another new version where we 
+utilize the back of the PCB more.
