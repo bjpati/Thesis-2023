@@ -1,7 +1,17 @@
-This is the first version of the circuit design. We started this version after we have selected all the necessary components. That is HV current sensing, comparators, etc. During this version, we have only made the electrical circuit diagram. We connected all components by following the knowledge of embedded electronics with regard to different voltage values.
+This is the first version of the circuit design. We started this version after we have selected all the necessary components.
+That is HV current sensing, comparators, etc. During this version, we have only made the electrical circuit diagram. 
+We connected all components by following the knowledge of embedded electronics with regard to different voltage values.
 
-Overview, the coupling is connected in this way. We first start by having a 32-channel input that is taken from the NMES card. Note that all channels are connected in the same way. After we have connected the NMES to the test circuit board, the connection is further connected to the HV current sensing (LTC6101). HV current sensing has three resistors, shunt resistor, input resistor, and output resistor. These resistors are determined by following the data sheet for the component. An important thing is that HV current sensing withstands up to 60V and this is something important for us because the voltage coming from the NMES board is 40V.
+Overview, the coupling is connected in this way. We first start by having a 32-channel input that is taken from the NMES card. 
+Note that all channels are connected in the same way. After we have connected the NMES to the test circuit board, the connection is 
+further connected to the HV current sensing (LTC6101). HV current sensing has three resistors, shunt resistor, input resistor, and output resistor. 
+These resistors are determined by following the data sheet for the component. An important thing is that HV current sensing 
+withstands up to 60V and this is something important for us because the voltage coming from the NMES board is 40V.
 
-The output of HV current sensing is connected to one input of the comparator (LM339) while the other input gets its value from a Digital/analog converter (DAC, MCP4921). In addition, the output of the comparator is connected to 32 channels, which in turn is connected to a data logger. Furthermore, STM32-Nucleo has cards and the purpose of it is to program the DAC to send the value we want. The value must therefore be sent to the comparator.
+The output of HV current sensing is connected to one input of the comparator (LM339) while the other input
+gets its value from a Digital/analog converter (DAC, MCP4921). In addition, the output of the comparator is connected to 32 channels, 
+which in turn is connected to a data logger. Furthermore, we have an STM32-Nucleo circuit board and its purpose is to program the DAC to send the 
+value we want. The value must therefore be sent to the comparator.
 
-Note that all components are fed with 5V except for HV current sensing. 5V is taken from a connector that can be connected via a computer or a battery. In addition, we have connected all decoupling capacitors with regard to the EMC perspective.
+Note that all components are fed with 5V except for HV current sensing. 5V is taken from a connector that can be connected via a computer or a battery.
+In addition, we have connected all decoupling capacitors with regard to the EMC perspective.
