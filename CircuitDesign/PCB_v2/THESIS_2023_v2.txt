@@ -1,1 +1,5 @@
-
+This is the second version of the circuit diagram. After we finished the first one, we decide to send the circuit 
+diagram to Carl-Mikael Zetterling to get feedback and review the circuit diagram. 
+The circuit has a problem and that is that we lack an output resistor for HV current sensing. 
+In addition, the STM32-Nucleo is supplied with both 3.3V and 5V and it is enough that we use one of the voltages. 
+So we removed the 3.3V and let it be powered via 5V.

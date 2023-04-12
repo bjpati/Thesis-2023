@@ -1,0 +1,10 @@
+This is the fourth version that deals with both the circuit diagram and PCB layout. 
+As for the circuit diagram, we decided to take the 3.3V from the STM32-Necluo circuit board and feed all the components with it. 
+But a bug was discovered that the Digital/Analog Converter (DAC) needs a pure voltage of 3.3V and the one coming from STM32-Necluo 
+can create problems for us. Therefore, we got a suggestion from Yu-Kai Huang to use a voltage regulator (ADP151) to drive a pure 3.3V 
+voltage. The ADP151 is an ultralow noise, low dropout (LDO) linear regulator that operates from 2.2 V to 5.5 V.
+ We, therefore, connected the 3.3V that comes from the STM32-Necluo circuit board and now feed all components with a pure 3.3V voltage 
+ that comes from the ADP151. Now the entire test board is powered with 3.3V from the ADP151 without any problems.
+
+Furthermore, we move to PCB design and this was big because we work with 32 channels. The first draft of the PCB layout was huge and 
+therefore we need to think of another way to connect all the components.

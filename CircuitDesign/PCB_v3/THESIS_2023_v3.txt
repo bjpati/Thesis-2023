@@ -1,0 +1,17 @@
+This is the third version which is an updated version after the design review with Saúl Alejandro Rodríguez Dueñas and Yu-Kai Huang. 
+After the review, we needed to change some components and add some. 
+First, we changed the Shunt resistor (RSx) for HV current sensing (LTC6101) to a regular low-value resistor. 
+Through various calculations, we were able to find the value of the shunt resistor, input resistor (Rx), and output resistor (Routx) 
+with 1ohm, 150ohm, and 10kohm respectively. Furthermore, we have changed the connection between the output resistor and 
+the comparator by now connecting the output resistor to the ground (GND). In addition, the output of HV current sensing is now 
+connected to the output of the comparator.
+
+Furthermore, we had problems with the comparator (LM339) because it will send out a very large voltage to the data log and therefore
+ we needed to connect two resistors to reduce the voltage. In order to fulfill the datalog requirement that the input voltage should be 
+ between 0-2.5V, we calculated that the two resistors and should have values of 330ohm and 1k respectively.
+
+Another important thing that we change was that we changed the supply voltage from 5V to 3.3V for all components and reason 
+was that it is easier to work with 3.3V. Now all components are supplied with a 3.3V voltage which is obtained externally via a connector.
+
+Finally, some decoupling capacitors were missing, for example, digital/analog converter, connector J3, and HV current sensing 
+reason of avoiding interference between the various components and with an EMC perspective in mind.
