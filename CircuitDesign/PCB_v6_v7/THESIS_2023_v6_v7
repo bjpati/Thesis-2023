@@ -1,0 +1,6 @@
+For version 6, both the schematic and pcb layout has been updated. 
+Instead of using the 3.3 V supply voltage from the STM board as an input to the LDO regulator we use the 5 V supply voltage. Due to the linearity of a regulator, 3.3V as an input wasn’t theoretically correct because of the occurrence of dropout voltage.
+We also added a micro-USB to the design if we ever need 5 V externally, this is connected to a 3-pin header which we can use a jumper between 5 V from the USB and 5 V in our design. 
+Furthermore, we improved our pcb layout, we utilized the backside more which allowed us to make a more compact design, now it is 12x12 cm as opposed to the last version that was 25x14 cm.
+For version 7 we added two more layer for PCB. The first one is continous ground plane and the other is a shared power supplay of 48V and 3.3V. 
+Then, we changed the placement of shunt resistor so that the current does not flow over whole PCB and induces noise.  

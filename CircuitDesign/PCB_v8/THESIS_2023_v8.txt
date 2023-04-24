@@ -1,0 +1,3 @@
+This is version 8 of PCB design. After the design review meeting with Karolinska institution and MMS the requirements were 
+changed, instead having the CM before the electrodes, they needed the measurment after the electrodes. Therefore, we needed to remove one 
+of the connectors and short all non-inverter of the HV current sensing together to have an close circuit. 
