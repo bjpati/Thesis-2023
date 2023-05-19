@@ -1,0 +1,3 @@
+For this version the design was changed because the previous design ware not work. The problem was in the common mode range of the
+HV current sensing. instead the design was replaced with an instrumentation amplifier with voltage divider at the input. The PCB
+needed to be re-routed. 
