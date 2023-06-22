@@ -1,0 +1,4 @@
+spi.c:24:6:SPI_SendData	32	static
+spi.c:47:6:MX_SPI1_Init	8	static
+spi.c:79:6:HAL_SPI_MspInit	48	static
+spi.c:109:6:HAL_SPI_MspDeInit	16	static
